@@ -1,0 +1,9 @@
+Native Pytorch inference is slow on Jetson nano. no real time output can get
+
+Used yolov7 tiny model weights 
+Very low frame rate only 1.5 frames per second
+
+Decide to use tensorRT inference engine on Jetson nano
+
+first converted .pt file to .wts file format
+generated .engine file to infer with tensorRT in main.cpp file of trt
